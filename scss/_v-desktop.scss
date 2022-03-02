@@ -1,0 +1,448 @@
+//////////////////////////
+@import "mixin-variables";
+
+/***** RESPONSIVE - DESKTOP *****/
+
+@media (min-width: 1024px) {
+
+    /***** PAGINA PRINCIPAL  *****/
+
+    .inicio {
+        height: 200px;
+    }
+
+    .home {
+        width: 100%;
+        height: 90vh;
+    }
+
+    /* LOGO MENU HOME */
+
+    .logo-home {
+        position: absolute;
+        z-index: 1;
+        top: 3%;
+        left: 2%;
+        height: 60px;
+        border-radius: 4%;
+        background-color: rgba(0, 0, 0, 0.65);
+
+        img {
+            width: 150px;
+
+            &:hover {
+                opacity: 1;
+                animation: pic 1s;
+            }
+        }
+    }
+
+    /* LOGO PAGES */
+
+    .logo-pages {
+        margin-left: 2%;
+        height: 50px;
+        border-radius: 4%;
+
+        img {
+            width: 130px;
+
+            &:hover {
+                opacity: 1;
+                animation: pic 1s;
+            }
+        }
+    }
+
+    .active{
+        &:hover{
+            text-decoration: overline;
+        }
+    }
+
+    /* MENU STRECH PARA DESKTOP */
+
+    .menu-home {
+        display: flex;
+        width: 100%;
+        height: 97.5vh;
+        cursor: pointer;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    /* ESTILOS NAVBAR */
+
+    .navbar{
+        background-color: $dark;
+        background-image: linear-gradient(to top, #000000ce 5%, #414141cc 70%);
+    }
+
+    .bar {
+        position: absolute;
+        margin-top: 2%;
+    }
+
+
+    /* PAGINAS MENU HOME */
+
+    .box {
+        width: 100%;
+        height: auto;
+        margin: 0.5px;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 3px;
+
+        .page {
+            width: 0%;
+            height: 100%;
+            top: 50%;
+            font-weight: bolder;
+            position: absolute;
+            justify-content: center;
+            background-color: transparent;
+            align-items: center;
+            overflow: hidden;
+            transition: .4s all;
+
+            a {
+                -webkit-text-stroke: 1px $smoke;
+                color: transparent;
+                text-decoration: none;
+
+                &:hover {
+                    color: transparent;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:hover .page {
+            width: 100%;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:hover {
+                filter: blur(1px);
+                width: 110%;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    /***** OUR HISTORY *****/
+
+    .img-bio {
+        position: relative;
+        display: inline-block;
+        text-align: start;
+        @include top;
+
+        .present {
+            object-fit: cover;
+            box-shadow: 10px 13px 9px 3px rgba(0, 0, 0, 0.603);
+        }
+
+        .text-bio {
+            position: absolute;
+            width: 200px;
+            top: 90px;
+            right: 4%;
+            color: rgba(229, 226, 226, 0.822);
+            text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664);
+
+            img {
+                position: absolute;
+                z-index: 1;
+                width: 60px;
+                right: 0%;
+                top: -70px;
+                text-align: end;
+            }
+        }
+
+        .bio2 {
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+            right: 3%;
+
+            a {
+                text-decoration: none;
+            }
+
+            .biotext {
+                color: rgba(218, 218, 218, 0.726);
+                font-weight: bolder;
+                font-family: 'Lora', serif;
+                text-decoration: overline;
+            }
+
+            img {
+                width: 45px;
+                margin-left: 2px;
+                margin-bottom: 4%;
+                border-radius: 100%;
+                background-color: rgba(253, 240, 120, 0.212);
+                box-shadow: 3px 5px 9px 3px rgba(0, 0, 0, 0.66);
+
+                &:hover {
+                    width: 46px;
+                    background-color: rgba(248, 240, 162, 0.288);
+                }
+            }
+        }
+    }
+
+    .izquierda {
+        margin: 0%;
+        @include top;
+    }
+
+    .titulo {
+        font-size: 45px;
+        margin-left: 70%;
+    }
+
+    .f-titulo {
+        @include bg-title;
+    }
+
+    .f-historia {
+        background-image: url(../img/fondos/bandera-colombia.png);
+    }
+
+    .parrafo {
+        @include history;
+        background-color: $p-carrusel;
+    }
+
+    /***** SERVICES - WHAT WE HELP *****/
+
+    .ft-services {
+        @include bg-title;
+    }
+
+    .titulo-help {
+        margin-left: 60%;
+    }
+
+    .servicios {
+        background-color: $dark;
+    }
+
+    .p-services {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 1%;
+        background-image: url(../img/fondos/photo-1452421822248-d4c2b47f0c81.jpg);
+    }
+
+    .img-serv {
+        height: 450px;
+    }
+
+    .bg-serv {
+        @include bg-serv;
+    }
+
+    .sderecha {
+        @include derecha;
+        @include carrusel-tex;
+    }
+
+    .sizquierda {
+        @include izquierda;
+        @include carrusel-tex;
+    }
+
+    /*SEPARADOR RIBBON  */
+
+    #s-ribbon {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        padding-bottom: 4%;
+
+        .content-ribbon {
+            width: 150%;
+            height: 90px;
+            color: $smoke;
+            margin-left: -25%;
+            border-bottom-left-radius: 70%;
+            border-bottom-right-radius: 70%;
+            background-color: $dark;
+            background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%);
+        }
+    }
+
+    .r-serv {
+        width: 80%;
+        display: grid;
+        grid-template-areas:
+            "mArea none myArea"
+            "myrea none myAre";
+
+        .logo-s {
+            height: 11rem;
+
+            img {
+                width: 9rem;
+
+                &:hover {
+                    width: 8.5rem;
+                }
+            }
+        }
+    }
+
+    .i1 {
+        grid-area: mArea;
+    }
+
+    .i2 {
+        grid-area: myArea;
+    }
+
+    .i3 {
+        grid-area: myrea;
+    }
+
+    .i4 {
+        grid-area: myAre;
+    }
+
+    .descrip {
+        height: 100vh;
+
+        .logo-serv {
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin-right: 4%;
+                width: 10rem;
+
+                &:hover {
+                    width: 10.5rem;
+                }
+            }
+        }
+
+    }
+
+    /***** PAGE - STUDIO *****/
+
+    .project {
+        margin-bottom: 500px;
+    }
+
+    .f-studio {
+        padding-bottom: 10%;
+        @include bg-page (url(../img/fondos/fondo-studio.png), repeat-y);
+    }
+
+    .studio-m {
+        padding-bottom: 4%;
+    }
+
+    /*GALERIA*/
+
+    .modal1 {
+        position: absolute;
+        bottom: 30%;
+    }
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 250px;
+        grid-gap: 4px;
+
+        .picture {
+            :hover img {
+                opacity: 1;
+                animation: pic 1s;
+            }
+
+            .imge {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    /* ORGANIZACION - GALERIA*/
+
+    .picture:nth-child(2) {
+        grid-row-start: span 2;
+    }
+
+    .picture:nth-child(4) {
+        grid-row-start: span 2;
+    }
+
+    .picture:nth-child(5) {
+        grid-row-start: span 2;
+    }
+
+    .picture:nth-child(7) {
+        grid-row-start: span 2;
+    }
+
+    .picture:nth-child(9) {
+        grid-row-start: span 2;
+    }
+
+
+    /***** GET IN TOUCH *****/
+
+    .contact {
+        color: $smoke;
+        background-color: $smoke;
+        background-image: linear-gradient(to top, #000000be 5%, #414141 70%);
+
+        
+    .tex {
+        @include carrusel-tex;
+    }
+
+    .redes {
+        font-weight: bold;
+
+        a {
+            color: $smoke;
+        }
+    }
+
+    h4 {
+        color: $smoke;
+    }
+
+    .line{
+        color: $dark;
+    }
+
+    .f-follow {
+        padding-top: 2%;
+        margin-top: 2%;
+    }
+
+    .form {
+        padding-top: 2%;
+        @include izquierda;
+    }
+    }
+
+}

@@ -1,0 +1,12 @@
+# Ignora la carpeta node_modules
+node_modules
+.node_repl_history
+
+# Ignora todos los archivos de texto
+*.txt
+
+# Ignora los archivos relacionados a API keys
+.env
+
+# Ignora archivos de configuración SASS
+.sass-cache

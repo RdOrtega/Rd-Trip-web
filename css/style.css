@@ -1,0 +1,840 @@
+/*ESTILOS GENERALES*/
+@import url("https://fonts.googleapis.com/css2? family= Quintessential & display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+/* FOOTER */
+.footer {
+  padding: 2px;
+  background-color: rgba(44, 41, 41, 0.712); }
+
+/* HR */
+hr {
+  color: white; }
+
+/*STYLES - TABLET*/
+/*ANIMACION*/
+@keyframes derecha {
+  0% {
+    transform: translateX(-350PX);
+    opacity: -1; } }
+
+@keyframes izquierda {
+  0% {
+    transform: translateX(350PX);
+    opacity: 1; } }
+
+@keyframes top {
+  0% {
+    transform: translateY(-300PX);
+    opacity: -1; } }
+
+/*ANIMACION y EFECTOS DE GALERIA*/
+@keyframes pic {
+  from {
+    opacity: -1; }
+  to {
+    opacity: 1; } }
+
+/*RESPONSIVE - IPHONE XR*/
+@media (max-width: 819px) {
+  /***** MOBILE FIRST-GENERALES *****/
+  .navbar {
+    background-color: #000000d2;
+    background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  /* MENU NAVBAR MOBILE HOME  */
+  .page a {
+    color: rgba(255, 255, 255, 0.904);
+    text-decoration: none; }
+  /* MENU NAVBAR PAGES */
+  .redes a {
+    color: #000000d2; }
+  /* TEXTO DIAPOSITIVA CARRUSEL - MOBILE HOME */
+  .text {
+    background-color: #000000d2;
+    border-radius: 4%; }
+  /*SEPARADOR RIBBON  */
+  #separador-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4%; }
+    #separador-ribbon .content {
+      width: 150%;
+      height: 90px;
+      margin-left: -25%;
+      border-bottom-left-radius: 70%;
+      border-bottom-right-radius: 70%;
+      background-color: #000000d2;
+      background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .p-mobile {
+    color: rgba(255, 255, 255, 0.904);
+    font-family: 'Lora', serif;
+    background-color: #000000d2;
+    background-image: linear-gradient(to top, #000000ce 5%, #414141 70%); }
+    .p-mobile h2 {
+      margin: 4%; }
+    .p-mobile .t-phone {
+      text-align: start;
+      padding-bottom: 4%;
+      margin-left: 5%;
+      margin-right: 5%; }
+  /***** PAGINA - OUR HISTORY  MOBILE*****/
+  .img-bio {
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    margin-bottom: 4%; }
+    .img-bio .present {
+      box-shadow: 10px 13px 9px 3px rgba(0, 0, 0, 0.66); }
+    .img-bio .text-bio {
+      position: absolute;
+      width: 200px;
+      top: 10px;
+      right: 2%;
+      color: rgba(229, 226, 226, 0.822);
+      text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664); }
+      .img-bio .text-bio img {
+        position: absolute;
+        z-index: 1;
+        width: 30px;
+        right: 4%;
+        text-align: end; }
+    .img-bio .bio2 {
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      right: 3%; }
+      .img-bio .bio2 a {
+        text-decoration: none; }
+      .img-bio .bio2 .biotext {
+        position: relative;
+        color: rgba(218, 218, 218, 0.726);
+        font-weight: bolder;
+        font-family: 'Lora', serif;
+        text-decoration: overline;
+        right: 10%; }
+      .img-bio .bio2 img {
+        border-radius: 100%;
+        width: 35px;
+        margin-left: 5px;
+        margin-bottom: 0%;
+        background-color: rgba(253, 240, 120, 0.212);
+        box-shadow: 3px 5px 9px 3px rgba(0, 0, 0, 0.66); }
+        .img-bio .bio2 img:active {
+          width: 48px;
+          background-color: rgba(248, 240, 162, 0.288); }
+  .f-titulo {
+    border-radius: 4%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: #000000d2; }
+  .f-historia {
+    height: auto;
+    background-color: #000000d2; }
+  .parrafo {
+    border-radius: 4%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(151, 151, 151, 0.356); }
+  .ft-services {
+    border-radius: 4%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904); }
+  .derecha {
+    animation: derecha 1.5s ease; }
+  .izquierda {
+    animation: izquierda 1.5s ease;
+    margin: 5% 0% 5% 0%; }
+  /*PAGINA DE SERVICIOS - WHAT WE HELP MOBILE */
+  .ft-services {
+    border-radius: 4%;
+    background-color: #000000d2; }
+  .titulo-help {
+    color: #535353; }
+  .servicios {
+    background-color: #000000d2; }
+  .img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .sderecha {
+    animation: derecha 1.5s ease;
+    margin-bottom: 4%; }
+  .sizquierda {
+    animation: izquierda 1.5s ease;
+    margin-bottom: 4%; }
+  /*SEPARADOR RIBBON  */
+  #s-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4%; }
+    #s-ribbon .content-ribbon {
+      width: 150%;
+      height: 90px;
+      color: rgba(255, 255, 255, 0.904);
+      margin-left: -25%;
+      border-bottom-left-radius: 70%;
+      border-bottom-right-radius: 70%;
+      background-color: #000000d2;
+      background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .bg-serv {
+    border-radius: 4%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    padding: 2% 0% 2% 0%;
+    font-family: 'Lora', serif;
+    background: rgba(151, 151, 151, 0.356); }
+  .r-serv {
+    display: grid;
+    grid-template-areas: "mArea myArea myrea myAre"; }
+  .i1 {
+    grid-area: mArea; }
+  .i2 {
+    grid-area: myArea; }
+  .i3 {
+    grid-area: myrea; }
+  .i4 {
+    grid-area: myAre; }
+  .roof {
+    position: absolute;
+    left: 45%;
+    font-size: 20px;
+    padding-bottom: 15%; }
+    .roof a {
+      color: rgba(255, 255, 255, 0.904);
+      text-decoration: overline; }
+  /***** PAGE - STUDIO MOBILE *****/
+  .f-studio {
+    height: 99vh;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-image: url(../img/fondos/fondo-studio.png); }
+  .project {
+    margin-bottom: 500px; }
+  .studio-m {
+    padding-bottom: 20%; }
+  /***** PAGE - STUDIO  *****/
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .gallery .imge {
+      width: 98%;
+      height: 100%; }
+  /***** GET IN TOUCH - MOBILE *****/
+  .contact {
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: #000000d2; }
+  .escarabajo img {
+    width: 50px; }
+  .tex {
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: rgba(7, 7, 7, 0.541); }
+  .l-redes img {
+    margin-left: 4%; }
+  h4 {
+    color: rgba(255, 255, 255, 0.904); }
+  .form {
+    margin-top: 10%;
+    animation: top 1.5s ease; }
+  .f-follow {
+    padding-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/fondos/photo-follow.jpg); } }
+
+/*STYLES - TABLET*/
+/*ANIMACION*/
+@keyframes derecha {
+  0% {
+    transform: translateX(-350PX);
+    opacity: -1; } }
+
+@keyframes izquierda {
+  0% {
+    transform: translateX(350PX);
+    opacity: 1; } }
+
+@keyframes top {
+  0% {
+    transform: translateY(-300PX);
+    opacity: -1; } }
+
+/*ANIMACION y EFECTOS DE GALERIA*/
+@keyframes pic {
+  from {
+    opacity: -1; }
+  to {
+    opacity: 1; } }
+
+/***** RESPONSIVE - IPAD AIR *****/
+@media (min-width: 820px) and (max-width: 1023px) {
+  /***** MOBILE FIRST-GENERALES *****/
+  .navbar {
+    background-color: #000000d2;
+    background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  /* MENU NAVBAR MOBILE HOME  */
+  .page a {
+    color: rgba(255, 255, 255, 0.904);
+    text-decoration: none; }
+  /* TEXTO DIAPOSITIVA CARRUSEL - MOBILE HOME */
+  .text {
+    background-color: #000000d2;
+    border-radius: 4%; }
+  /*SEPARADOR RIBBON  */
+  #separador-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4%; }
+    #separador-ribbon .content {
+      width: 150%;
+      height: 90px;
+      margin-left: -25%;
+      border-bottom-left-radius: 70%;
+      border-bottom-right-radius: 70%;
+      background-color: #000000d2;
+      background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .p-mobile {
+    color: rgba(255, 255, 255, 0.904);
+    font-family: 'Lora', serif;
+    background-color: #000000d2;
+    background-image: linear-gradient(to top, #000000ce 5%, #414141 70%); }
+    .p-mobile h2 {
+      margin: 4%; }
+    .p-mobile .t-phone {
+      text-align: start;
+      padding-bottom: 3%;
+      margin-left: 5%;
+      margin-right: 5%; }
+  /***** OUR HISTORY *****/
+  .img-bio {
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    margin-bottom: 4%; }
+    .img-bio .present {
+      box-shadow: 10px 13px 9px 3px rgba(0, 0, 0, 0.66); }
+    .img-bio .text-bio {
+      position: absolute;
+      width: 250px;
+      font-size: 20px;
+      top: 90px;
+      right: 4%;
+      color: rgba(229, 226, 226, 0.822);
+      text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664); }
+      .img-bio .text-bio img {
+        position: absolute;
+        z-index: 1;
+        width: 30px;
+        right: 0%;
+        top: -70px;
+        text-align: end; }
+    .img-bio .bio2 {
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      right: 3%; }
+      .img-bio .bio2 a {
+        text-decoration: none; }
+      .img-bio .bio2 .biotext {
+        color: rgba(218, 218, 218, 0.726);
+        font-weight: bolder;
+        font-family: 'Lora', serif;
+        text-decoration: overline; }
+      .img-bio .bio2 img {
+        border-radius: 100%;
+        width: 45px;
+        margin-left: 2px;
+        margin-bottom: 4%;
+        background-color: rgba(253, 240, 120, 0.212);
+        box-shadow: 3px 5px 9px 3px rgba(0, 0, 0, 0.66); }
+        .img-bio .bio2 img:active {
+          width: 48px;
+          background-color: rgba(248, 240, 162, 0.288); }
+  .titulo {
+    font-size: 45px;
+    margin-left: 70%; }
+  .f-titulo {
+    margin-left: -3%;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
+  .parrafo {
+    border-radius: 4%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(151, 151, 151, 0.356); }
+  .f-historia {
+    height: auto;
+    background-color: #000000d2; }
+  .derecha {
+    animation: derecha 1.5s ease; }
+  .izquierda {
+    animation: izquierda 1.5s ease; }
+  /***** SERVICES - WHAT WE HELP *****/
+  .servicios {
+    background-color: #000000d2; }
+  .ft-services {
+    margin-left: -3%;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
+  .titulo-help {
+    margin-left: 60%; }
+  .sderecha {
+    animation: derecha 1.5s ease;
+    margin-bottom: 3%; }
+  .sizquierda {
+    animation: izquierda 1.5s ease;
+    margin-bottom: 3%; }
+  .roof {
+    position: absolute;
+    left: 45%;
+    font-size: 20px;
+    padding-bottom: 7%; }
+    .roof a {
+      color: rgba(255, 255, 255, 0.904);
+      text-decoration: overline; }
+  /*SEPARADOR RIBBON  */
+  #s-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4%; }
+    #s-ribbon .content-ribbon {
+      width: 150%;
+      height: 90px;
+      color: rgba(255, 255, 255, 0.904);
+      margin-left: -25%;
+      border-bottom-left-radius: 70%;
+      border-bottom-right-radius: 70%;
+      background-color: #000000d2;
+      background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .bg-serv {
+    border-radius: 4%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    padding: 2% 0% 2% 0%;
+    font-family: 'Lora', serif;
+    background: rgba(151, 151, 151, 0.356); }
+  .descrip {
+    margin-bottom: 4%; }
+    .descrip .r-serv {
+      display: grid;
+      grid-template-areas: "mArea myArea myrea myAre"; }
+  /***** PAGE - STUDIO  *****/
+  .modal1 {
+    position: absolute;
+    bottom: 30%; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px; }
+    .gallery .imge {
+      width: 100%;
+      height: 100%; }
+  /* ORGANIZACION - GALERIA*/
+  .picture:nth-child(2) {
+    grid-row-start: span 2; }
+  .picture:nth-child(4) {
+    grid-row-start: span 2; }
+  .picture:nth-child(5) {
+    grid-row-start: span 2; }
+  .picture:nth-child(7) {
+    grid-row-start: span 2; }
+  .picture:nth-child(9) {
+    grid-row-start: span 2; }
+  .f-studio {
+    height: 99vh;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-image: url(../img/fondos/fondo-studio.png); }
+  /***** GET IN TOUCH - MOBILE *****/
+  .contact {
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: #000000d2; }
+  .escarabajo {
+    position: absolute;
+    right: 10%;
+    top: 10%; }
+    .escarabajo img {
+      width: 60px; }
+  .tex {
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: rgba(7, 7, 7, 0.541); }
+  .redes {
+    font-weight: bold; }
+    .redes a {
+      color: rgba(255, 255, 255, 0.904); }
+  h4 {
+    color: rgba(255, 255, 255, 0.904); }
+  .f-follow {
+    height: 20vh;
+    padding-top: 5%;
+    margin: 5% 0% 5% 0%;
+    border-radius: 2%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/fondos/f-follow.jpg); }
+  .form {
+    padding-top: 10%;
+    animation: top 1.5s ease; } }
+
+/*STYLES - TABLET*/
+/*ANIMACION*/
+@keyframes derecha {
+  0% {
+    transform: translateX(-350PX);
+    opacity: -1; } }
+
+@keyframes izquierda {
+  0% {
+    transform: translateX(350PX);
+    opacity: 1; } }
+
+@keyframes top {
+  0% {
+    transform: translateY(-300PX);
+    opacity: -1; } }
+
+/*ANIMACION y EFECTOS DE GALERIA*/
+@keyframes pic {
+  from {
+    opacity: -1; }
+  to {
+    opacity: 1; } }
+
+/***** RESPONSIVE - DESKTOP *****/
+@media (min-width: 1024px) {
+  /***** PAGINA PRINCIPAL  *****/
+  .inicio {
+    height: 200px; }
+  .home {
+    width: 100%;
+    height: 90vh; }
+  /* LOGO MENU HOME */
+  .logo-home {
+    position: absolute;
+    z-index: 1;
+    top: 3%;
+    left: 2%;
+    height: 60px;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.65); }
+    .logo-home img {
+      width: 150px; }
+      .logo-home img:hover {
+        opacity: 1;
+        animation: pic 1s; }
+  /* LOGO PAGES */
+  .logo-pages {
+    margin-left: 2%;
+    height: 50px;
+    border-radius: 4%; }
+    .logo-pages img {
+      width: 130px; }
+      .logo-pages img:hover {
+        opacity: 1;
+        animation: pic 1s; }
+  .active:hover {
+    text-decoration: overline; }
+  /* MENU STRECH PARA DESKTOP */
+  .menu-home {
+    display: flex;
+    width: 100%;
+    height: 97.5vh;
+    cursor: pointer;
+    align-items: stretch;
+    justify-content: center; }
+  /* ESTILOS NAVBAR */
+  .navbar {
+    background-color: #000000d2;
+    background-image: linear-gradient(to top, #000000ce 5%, #414141cc 70%); }
+  .bar {
+    position: absolute;
+    margin-top: 2%; }
+  /* PAGINAS MENU HOME */
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 0.5px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px; }
+    .box .page {
+      width: 0%;
+      height: 100%;
+      top: 50%;
+      font-weight: bolder;
+      position: absolute;
+      justify-content: center;
+      background-color: transparent;
+      align-items: center;
+      overflow: hidden;
+      transition: .4s all; }
+      .box .page a {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.904);
+        color: transparent;
+        text-decoration: none; }
+        .box .page a:hover {
+          color: transparent;
+          text-decoration: none; }
+    .box:hover .page {
+      width: 100%;
+      font-size: 40px;
+      font-family: Georgia, 'Times New Roman', Times, serif; }
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      .box img:hover {
+        filter: blur(1px);
+        width: 110%;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+  /***** OUR HISTORY *****/
+  .img-bio {
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    animation: top 1.5s ease; }
+    .img-bio .present {
+      object-fit: cover;
+      box-shadow: 10px 13px 9px 3px rgba(0, 0, 0, 0.603); }
+    .img-bio .text-bio {
+      position: absolute;
+      width: 200px;
+      top: 90px;
+      right: 4%;
+      color: rgba(229, 226, 226, 0.822);
+      text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664); }
+      .img-bio .text-bio img {
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        right: 0%;
+        top: -70px;
+        text-align: end; }
+    .img-bio .bio2 {
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      right: 3%; }
+      .img-bio .bio2 a {
+        text-decoration: none; }
+      .img-bio .bio2 .biotext {
+        color: rgba(218, 218, 218, 0.726);
+        font-weight: bolder;
+        font-family: 'Lora', serif;
+        text-decoration: overline; }
+      .img-bio .bio2 img {
+        width: 45px;
+        margin-left: 2px;
+        margin-bottom: 4%;
+        border-radius: 100%;
+        background-color: rgba(253, 240, 120, 0.212);
+        box-shadow: 3px 5px 9px 3px rgba(0, 0, 0, 0.66); }
+        .img-bio .bio2 img:hover {
+          width: 46px;
+          background-color: rgba(248, 240, 162, 0.288); }
+  .izquierda {
+    margin: 0%;
+    animation: top 1.5s ease; }
+  .titulo {
+    font-size: 45px;
+    margin-left: 70%; }
+  .f-titulo {
+    margin-left: -3%;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
+  .f-historia {
+    background-image: url(../img/fondos/bandera-colombia.png); }
+  .parrafo {
+    border-radius: 4%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(7, 7, 7, 0.541); }
+  /***** SERVICES - WHAT WE HELP *****/
+  .ft-services {
+    margin-left: -3%;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
+  .titulo-help {
+    margin-left: 60%; }
+  .servicios {
+    background-color: #000000d2; }
+  .p-services {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1%;
+    background-image: url(../img/fondos/photo-1452421822248-d4c2b47f0c81.jpg); }
+  .img-serv {
+    height: 450px; }
+  .bg-serv {
+    border-radius: 4%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    padding: 2% 0% 2% 0%;
+    font-family: 'Lora', serif; }
+  .sderecha {
+    animation: derecha 1.5s ease;
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: rgba(7, 7, 7, 0.541); }
+  .sizquierda {
+    animation: izquierda 1.5s ease;
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: rgba(7, 7, 7, 0.541); }
+  /*SEPARADOR RIBBON  */
+  #s-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4%; }
+    #s-ribbon .content-ribbon {
+      width: 150%;
+      height: 90px;
+      color: rgba(255, 255, 255, 0.904);
+      margin-left: -25%;
+      border-bottom-left-radius: 70%;
+      border-bottom-right-radius: 70%;
+      background-color: #000000d2;
+      background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .r-serv {
+    width: 80%;
+    display: grid;
+    grid-template-areas: "mArea none myArea" "myrea none myAre"; }
+    .r-serv .logo-s {
+      height: 11rem; }
+      .r-serv .logo-s img {
+        width: 9rem; }
+        .r-serv .logo-s img:hover {
+          width: 8.5rem; }
+  .i1 {
+    grid-area: mArea; }
+  .i2 {
+    grid-area: myArea; }
+  .i3 {
+    grid-area: myrea; }
+  .i4 {
+    grid-area: myAre; }
+  .descrip {
+    height: 100vh; }
+    .descrip .logo-serv {
+      display: flex;
+      justify-content: center; }
+      .descrip .logo-serv img {
+        margin-right: 4%;
+        width: 10rem; }
+        .descrip .logo-serv img:hover {
+          width: 10.5rem; }
+  /***** PAGE - STUDIO *****/
+  .project {
+    margin-bottom: 500px; }
+  .f-studio {
+    padding-bottom: 10%;
+    height: 99vh;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-image: url(../img/fondos/fondo-studio.png); }
+  .studio-m {
+    padding-bottom: 4%; }
+  /*GALERIA*/
+  .modal1 {
+    position: absolute;
+    bottom: 30%; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 4px; }
+    .gallery .picture :hover img {
+      opacity: 1;
+      animation: pic 1s; }
+    .gallery .picture .imge {
+      width: 100%;
+      height: 100%; }
+  /* ORGANIZACION - GALERIA*/
+  .picture:nth-child(2) {
+    grid-row-start: span 2; }
+  .picture:nth-child(4) {
+    grid-row-start: span 2; }
+  .picture:nth-child(5) {
+    grid-row-start: span 2; }
+  .picture:nth-child(7) {
+    grid-row-start: span 2; }
+  .picture:nth-child(9) {
+    grid-row-start: span 2; }
+  /***** GET IN TOUCH *****/
+  .contact {
+    color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(255, 255, 255, 0.904);
+    background-image: linear-gradient(to top, #000000be 5%, #414141 70%); }
+    .contact .tex {
+      font-family: 'Lora', serif;
+      border-radius: 4%;
+      background-color: rgba(7, 7, 7, 0.541); }
+    .contact .redes {
+      font-weight: bold; }
+      .contact .redes a {
+        color: rgba(255, 255, 255, 0.904); }
+    .contact h4 {
+      color: rgba(255, 255, 255, 0.904); }
+    .contact .line {
+      color: #000000d2; }
+    .contact .f-follow {
+      padding-top: 2%;
+      margin-top: 2%; }
+    .contact .form {
+      padding-top: 2%;
+      animation: izquierda 1.5s ease; } }
+
+/*STYLES - TABLET*/
+/*ANIMACION*/
+@keyframes derecha {
+  0% {
+    transform: translateX(-350PX);
+    opacity: -1; } }
+
+@keyframes izquierda {
+  0% {
+    transform: translateX(350PX);
+    opacity: 1; } }
+
+@keyframes top {
+  0% {
+    transform: translateY(-300PX);
+    opacity: -1; } }
+
+/*ANIMACION y EFECTOS DE GALERIA*/
+@keyframes pic {
+  from {
+    opacity: -1; }
+  to {
+    opacity: 1; } }

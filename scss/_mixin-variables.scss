@@ -1,0 +1,110 @@
+////////////////
+//STYLES - MIXIN - VARIABLES
+
+@mixin carrusel-tex {
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: $p-carrusel;
+}
+
+@mixin history {
+    border-radius: 4%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: $smoke;
+}
+
+@mixin bg-img ($img, $repeat) {
+    height: 99vh;
+    background-size: cover;
+    background-repeat: ($repeat);
+    background-image: ($img);
+}
+
+/*STYLES - TABLET*/
+
+@mixin bg-title {
+    margin-left: -3%;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76);
+}
+
+@mixin bg-page ($fondo, $doble) {
+    height: 99vh;
+    background-size: cover;
+    background-repeat: ($doble);
+    background-image: ($fondo);
+}
+
+//VARIABLES
+
+$p-carrusel:rgba(7, 7, 7, 0.541);
+$dark:#000000d2;
+$smoke:rgba(255, 255, 255, 0.904);
+
+
+//MIXIN PARA LAS ANIMACIONES 
+
+@mixin derecha {
+    animation: derecha 1.5s ease;
+}
+
+@mixin izquierda {
+    animation: izquierda 1.5s ease;
+}
+
+@mixin top {
+    animation: top 1.5s ease;
+}
+
+
+/*ANIMACION*/
+
+@keyframes derecha {
+
+    0% {
+        transform: translateX(-350PX);
+        opacity: -1;
+    }
+}
+
+@keyframes izquierda {
+
+    0% {
+        transform: translateX(+350PX);
+        opacity: 1;
+    }
+
+}
+
+@keyframes top {
+
+    0% {
+        transform: translateY(-300PX);
+        opacity: -1;
+    }
+}
+
+/*ANIMACION y EFECTOS DE GALERIA*/
+
+@keyframes pic {
+    from {
+        opacity: -1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+// ESTILOS SERVICES
+
+@mixin bg-serv {
+    border-radius: 4%;
+    font-size: 20px;
+    color: $smoke;
+    padding: 2% 0% 2% 0%;
+    font-family: 'Lora', serif;
+}
