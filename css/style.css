@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
@@ -222,7 +223,7 @@ hr {
     position: absolute;
     left: 45%;
     font-size: 20px;
-    padding-bottom: 15%; }
+    padding-bottom: 20%; }
     .roof a {
       color: rgba(255, 255, 255, 0.904);
       text-decoration: overline; }
@@ -256,8 +257,6 @@ hr {
     height: 100vh;
     color: rgba(255, 255, 255, 0.904);
     background-color: #000000d2; }
-    .contact .escarabajo img {
-      width: 50px; }
     .contact .tex {
       font-family: 'Lora', serif;
       border-radius: 4%;
@@ -267,7 +266,8 @@ hr {
     .contact h4 {
       color: rgba(255, 255, 255, 0.904); }
     .contact .form {
-      margin-top: 10%;
+      padding-bottom: 5px;
+      margin-top: 5%;
       animation: top 1.5s ease; }
     .contact .f-follow {
       padding-top: 5%;
@@ -448,7 +448,7 @@ hr {
     position: absolute;
     left: 45%;
     font-size: 20px;
-    padding-bottom: 7%; }
+    padding-bottom: 15%; }
     .roof a {
       color: rgba(255, 255, 255, 0.904);
       text-decoration: overline; }
@@ -512,12 +512,6 @@ hr {
     height: 100vh;
     color: rgba(255, 255, 255, 0.904);
     background-color: #000000d2; }
-    .contact .escarabajo {
-      position: absolute;
-      right: 10%;
-      top: 10%; }
-      .contact .escarabajo img {
-        width: 60px; }
     .contact .redes {
       font-weight: bold; }
       .contact .redes a {
@@ -532,7 +526,8 @@ hr {
       object-fit: cover;
       background-image: url(../img/fondos/f-follow.jpg); }
     .contact .form {
-      padding-top: 10%;
+      padding-bottom: 5px;
+      padding-top: 5%;
       animation: top 1.5s ease; } }
 
 /*STYLES - TABLET*/

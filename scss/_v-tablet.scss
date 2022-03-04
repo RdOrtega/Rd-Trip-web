@@ -205,7 +205,7 @@
         position: absolute;
         left: 45%;
         font-size: 20px;
-        padding-bottom: 7%;
+        padding-bottom: 15%;
 
         a {
             color: $smoke;
@@ -302,16 +302,6 @@
         color: $smoke;
         background-color: $dark;
 
-        .escarabajo {
-            position: absolute;
-            right: 10%;
-            top: 10%;
-
-            img {
-                width: 60px;
-            }
-        }
-
         .redes {
             font-weight: bold;
 
@@ -334,7 +324,8 @@
         }
 
         .form {
-            padding-top: 10%;
+            padding-bottom:5px;
+            padding-top: 5%;
             @include top;
         }
     }

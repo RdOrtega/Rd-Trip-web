@@ -252,7 +252,7 @@
         position: absolute;
         left: 45%;
         font-size: 20px;
-        padding-bottom: 15%;
+        padding-bottom: 20%;
 
         a {
             color: $smoke;
@@ -311,14 +311,6 @@
         color: $smoke;
         background-color: $dark;
 
-        
-    .escarabajo {
- 
-        img{
-            width: 50px;
-        }
-    }
-
     .tex {
         @include carrusel-tex;
     }
@@ -334,7 +326,8 @@
     }
 
     .form {
-        margin-top: 10%;
+        padding-bottom:5px;
+        margin-top: 5%;
         @include top;
     }
 
