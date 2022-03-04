@@ -19,23 +19,32 @@ hr {
 /*ANIMACION*/
 @keyframes derecha {
   0% {
-    transform: translateX(-350PX);
-    opacity: -1; } }
+    transform: translateX(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
 
 @keyframes izquierda {
   0% {
-    transform: translateX(350PX);
+    transform: translateX(200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes top {
   0% {
-    transform: translateY(-300PX);
-    opacity: -1; } }
+    transform: translateY(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
 
 /*ANIMACION y EFECTOS DE GALERIA*/
 @keyframes pic {
   from {
-    opacity: -1; }
+    opacity: 0; }
   to {
     opacity: 1; } }
 
@@ -45,6 +54,10 @@ hr {
   .navbar {
     background-color: #000000d2;
     background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .tex {
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: rgba(7, 7, 7, 0.541); }
   /* MENU NAVBAR MOBILE HOME  */
   .page a {
     color: rgba(255, 255, 255, 0.904);
@@ -213,6 +226,14 @@ hr {
     .roof a {
       color: rgba(255, 255, 255, 0.904);
       text-decoration: overline; }
+  /*ANIMACION CON JVSCRIPT*/
+  .cont img {
+    opacity: 0;
+    scale: 0.8;
+    transition: all 1.5s; }
+    .cont img.visible {
+      opacity: 1;
+      scale: 1; }
   /***** PAGE - STUDIO MOBILE *****/
   .f-studio {
     height: 99vh;
@@ -235,49 +256,56 @@ hr {
     height: 100vh;
     color: rgba(255, 255, 255, 0.904);
     background-color: #000000d2; }
-  .escarabajo img {
-    width: 50px; }
-  .tex {
-    font-family: 'Lora', serif;
-    border-radius: 4%;
-    background-color: rgba(7, 7, 7, 0.541); }
-  .l-redes img {
-    margin-left: 4%; }
-  h4 {
-    color: rgba(255, 255, 255, 0.904); }
-  .form {
-    margin-top: 10%;
-    animation: top 1.5s ease; }
-  .f-follow {
-    padding-top: 2%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 2%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/fondos/photo-follow.jpg); } }
+    .contact .escarabajo img {
+      width: 50px; }
+    .contact .tex {
+      font-family: 'Lora', serif;
+      border-radius: 4%;
+      background-color: rgba(7, 7, 7, 0.541); }
+    .contact .l-redes img {
+      margin-left: 4%; }
+    .contact h4 {
+      color: rgba(255, 255, 255, 0.904); }
+    .contact .form {
+      margin-top: 10%;
+      animation: top 1.5s ease; }
+    .contact .f-follow {
+      padding-top: 5%;
+      margin-top: 10%;
+      border-radius: 2%;
+      object-fit: cover;
+      background-image: url(../img/fondos/photo-follow.jpg); } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
 @keyframes derecha {
   0% {
-    transform: translateX(-350PX);
-    opacity: -1; } }
+    transform: translateX(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
 
 @keyframes izquierda {
   0% {
-    transform: translateX(350PX);
+    transform: translateX(200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes top {
   0% {
-    transform: translateY(-300PX);
-    opacity: -1; } }
+    transform: translateY(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
 
 /*ANIMACION y EFECTOS DE GALERIA*/
 @keyframes pic {
   from {
-    opacity: -1; }
+    opacity: 0; }
   to {
     opacity: 1; } }
 
@@ -295,6 +323,10 @@ hr {
   .text {
     background-color: #000000d2;
     border-radius: 4%; }
+  .tex {
+    font-family: 'Lora', serif;
+    border-radius: 4%;
+    background-color: rgba(7, 7, 7, 0.541); }
   /*SEPARADOR RIBBON  */
   #separador-ribbon {
     width: 100%;
@@ -388,6 +420,14 @@ hr {
     animation: derecha 1.5s ease; }
   .izquierda {
     animation: izquierda 1.5s ease; }
+  /*ANIMACION CON JVSCRIPT*/
+  .cont img {
+    opacity: 0;
+    scale: 0.8;
+    transition: all 1.5s; }
+    .cont img.visible {
+      opacity: 1;
+      scale: 1; }
   /***** SERVICES - WHAT WE HELP *****/
   .servicios {
     background-color: #000000d2; }
@@ -472,55 +512,59 @@ hr {
     height: 100vh;
     color: rgba(255, 255, 255, 0.904);
     background-color: #000000d2; }
-  .escarabajo {
-    position: absolute;
-    right: 10%;
-    top: 10%; }
-    .escarabajo img {
-      width: 60px; }
-  .tex {
-    font-family: 'Lora', serif;
-    border-radius: 4%;
-    background-color: rgba(7, 7, 7, 0.541); }
-  .redes {
-    font-weight: bold; }
-    .redes a {
+    .contact .escarabajo {
+      position: absolute;
+      right: 10%;
+      top: 10%; }
+      .contact .escarabajo img {
+        width: 60px; }
+    .contact .redes {
+      font-weight: bold; }
+      .contact .redes a {
+        color: rgba(255, 255, 255, 0.904); }
+    .contact h4 {
       color: rgba(255, 255, 255, 0.904); }
-  h4 {
-    color: rgba(255, 255, 255, 0.904); }
-  .f-follow {
-    height: 20vh;
-    padding-top: 5%;
-    margin: 5% 0% 5% 0%;
-    border-radius: 2%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/fondos/f-follow.jpg); }
-  .form {
-    padding-top: 10%;
-    animation: top 1.5s ease; } }
+    .contact .f-follow {
+      height: 20vh;
+      padding-top: 5%;
+      margin-top: 6%;
+      border-radius: 2%;
+      object-fit: cover;
+      background-image: url(../img/fondos/f-follow.jpg); }
+    .contact .form {
+      padding-top: 10%;
+      animation: top 1.5s ease; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
 @keyframes derecha {
   0% {
-    transform: translateX(-350PX);
-    opacity: -1; } }
+    transform: translateX(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
 
 @keyframes izquierda {
   0% {
-    transform: translateX(350PX);
+    transform: translateX(200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes top {
   0% {
-    transform: translateY(-300PX);
-    opacity: -1; } }
+    transform: translateY(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
 
 /*ANIMACION y EFECTOS DE GALERIA*/
 @keyframes pic {
   from {
-    opacity: -1; }
+    opacity: 0; }
   to {
     opacity: 1; } }
 
@@ -700,6 +744,14 @@ hr {
     color: rgba(255, 255, 255, 0.904);
     padding: 2% 0% 2% 0%;
     font-family: 'Lora', serif; }
+  /*ANIMACION CON JVSCRIPT*/
+  .cont img {
+    opacity: 0;
+    scale: 0.8;
+    transition: all 2s; }
+    .cont img.visible {
+      opacity: 1;
+      scale: 1; }
   .sderecha {
     animation: derecha 1.5s ease;
     font-family: 'Lora', serif;
@@ -765,7 +817,7 @@ hr {
     background-image: url(../img/fondos/fondo-studio.png); }
   .studio-m {
     padding-bottom: 4%; }
-  /*GALERIA*/
+  /****** GALERIA ********/
   .modal1 {
     position: absolute;
     bottom: 30%; }
@@ -812,29 +864,38 @@ hr {
       padding-top: 2%;
       margin-top: 2%; }
     .contact .form {
-      padding-top: 2%;
+      padding-top: 3%;
       animation: izquierda 1.5s ease; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
 @keyframes derecha {
   0% {
-    transform: translateX(-350PX);
-    opacity: -1; } }
+    transform: translateX(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
 
 @keyframes izquierda {
   0% {
-    transform: translateX(350PX);
+    transform: translateX(200PX);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes top {
   0% {
-    transform: translateY(-300PX);
-    opacity: -1; } }
+    transform: translateY(-200PX);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
 
 /*ANIMACION y EFECTOS DE GALERIA*/
 @keyframes pic {
   from {
-    opacity: -1; }
+    opacity: 0; }
   to {
     opacity: 1; } }

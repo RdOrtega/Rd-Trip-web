@@ -1,5 +1,5 @@
 ////////////////
-//STYLES - MIXIN - VARIABLES
+//STYLES - MIXIN - VARIABLES - ANIMACIONES
 
 @mixin carrusel-tex {
     font-family: 'Lora', serif;
@@ -64,33 +64,47 @@ $smoke:rgba(255, 255, 255, 0.904);
 @keyframes derecha {
 
     0% {
-        transform: translateX(-350PX);
-        opacity: -1;
+        transform: translateX(-200PX);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 
 @keyframes izquierda {
 
     0% {
-        transform: translateX(+350PX);
+        transform: translateX(+200PX);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
         opacity: 1;
     }
+    
 
 }
 
 @keyframes top {
 
     0% {
-        transform: translateY(-300PX);
-        opacity: -1;
+        transform: translateY(-200PX);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
+
 
 /*ANIMACION y EFECTOS DE GALERIA*/
 
 @keyframes pic {
     from {
-        opacity: -1;
+        opacity: 0;
     }
 
     to {

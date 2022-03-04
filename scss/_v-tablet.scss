@@ -7,7 +7,7 @@
 
     /***** MOBILE FIRST-GENERALES *****/
 
-    .navbar{
+    .navbar {
         background-color: $dark;
         background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%);
     }
@@ -25,6 +25,10 @@
     .text {
         background-color: $dark;
         border-radius: 4%;
+    }
+
+    .tex {
+        @include carrusel-tex;
     }
 
     /*SEPARADOR RIBBON  */
@@ -156,6 +160,23 @@
         @include izquierda;
     }
 
+
+    /*ANIMACION CON JVSCRIPT*/
+
+    .cont {
+        img {
+            opacity: 0;
+            scale: 0.8;
+            transition: all 1.5s;
+
+            &.visible {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+    }
+
+
     /***** SERVICES - WHAT WE HELP *****/
 
     .servicios {
@@ -280,46 +301,44 @@
         height: 100vh;
         color: $smoke;
         background-color: $dark;
-    }
 
-    .escarabajo {
-        position: absolute;
-        right: 10%;
-        top: 10%;
-        img{
-            width: 60px;
+        .escarabajo {
+            position: absolute;
+            right: 10%;
+            top: 10%;
+
+            img {
+                width: 60px;
+            }
         }
-    }
 
-    .tex {
-        @include carrusel-tex;
-    }
+        .redes {
+            font-weight: bold;
 
-    .redes {
-        font-weight: bold;
+            a {
+                color: $smoke;
+            }
+        }
 
-        a {
+        h4 {
             color: $smoke;
         }
+
+        .f-follow {
+            height: 20vh;
+            padding-top: 5%;
+            margin-top: 6%;
+            border-radius: 2%;
+            object-fit: cover;
+            background-image: url(../img/fondos/f-follow.jpg);
+        }
+
+        .form {
+            padding-top: 10%;
+            @include top;
+        }
     }
 
-    h4 {
-        color: $smoke;
-    }
 
-    .f-follow {
-        height: 20vh;
-        padding-top: 5%;
-        margin: 5% 0% 5% 0%;
-        border-radius: 2%;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-image: url(../img/fondos/f-follow.jpg);
-    }
-
-    .form {
-        padding-top: 10%;
-        @include top;
-    }
 
 }

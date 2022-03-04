@@ -54,8 +54,8 @@
         }
     }
 
-    .active{
-        &:hover{
+    .active {
+        &:hover {
             text-decoration: overline;
         }
     }
@@ -73,7 +73,7 @@
 
     /* ESTILOS NAVBAR */
 
-    .navbar{
+    .navbar {
         background-color: $dark;
         background-image: linear-gradient(to top, #000000ce 5%, #414141cc 70%);
     }
@@ -255,6 +255,21 @@
         @include bg-serv;
     }
 
+    /*ANIMACION CON JVSCRIPT*/
+
+    .cont {
+        img {
+            opacity: 0;
+            scale: 0.8;
+            transition: all 2s;
+
+            &.visible {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+    }
+
     .sderecha {
         @include derecha;
         @include carrusel-tex;
@@ -356,7 +371,7 @@
         padding-bottom: 4%;
     }
 
-    /*GALERIA*/
+    /****** GALERIA ********/
 
     .modal1 {
         position: absolute;
@@ -413,36 +428,36 @@
         background-color: $smoke;
         background-image: linear-gradient(to top, #000000be 5%, #414141 70%);
 
-        
-    .tex {
-        @include carrusel-tex;
-    }
 
-    .redes {
-        font-weight: bold;
+        .tex {
+            @include carrusel-tex;
+        }
 
-        a {
+        .redes {
+            font-weight: bold;
+
+            a {
+                color: $smoke;
+            }
+        }
+
+        h4 {
             color: $smoke;
         }
-    }
 
-    h4 {
-        color: $smoke;
-    }
+        .line {
+            color: $dark;
+        }
 
-    .line{
-        color: $dark;
-    }
+        .f-follow {
+            padding-top: 2%;
+            margin-top: 2%;
+        }
 
-    .f-follow {
-        padding-top: 2%;
-        margin-top: 2%;
-    }
-
-    .form {
-        padding-top: 2%;
-        @include izquierda;
-    }
+        .form {
+            padding-top: 3%;
+            @include izquierda;
+        }
     }
 
 }
