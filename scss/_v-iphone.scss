@@ -325,18 +325,18 @@
         color: $smoke;
     }
 
-    .form {
-        padding-bottom:25px;
-        margin-top: 5%;
-        @include top;
-    }
-
     .f-follow {
         padding-top: 5%;
         margin-top: 10%;  
         border-radius: 2%;
         object-fit: cover;
         background-image: url(../img/fondos/photo-follow.jpg);
+    }
+
+    .form {
+        padding-bottom:25px;
+        margin-top: 5%;
+        @include top;
     }
     }
 

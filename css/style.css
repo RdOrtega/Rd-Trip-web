@@ -265,16 +265,16 @@ hr {
       margin-left: 4%; }
     .contact h4 {
       color: rgba(255, 255, 255, 0.904); }
-    .contact .form {
-      padding-bottom: 25px;
-      margin-top: 5%;
-      animation: top 1.5s ease; }
     .contact .f-follow {
       padding-top: 5%;
       margin-top: 10%;
       border-radius: 2%;
       object-fit: cover;
-      background-image: url(../img/fondos/photo-follow.jpg); } }
+      background-image: url(../img/fondos/photo-follow.jpg); }
+    .contact .form {
+      padding-bottom: 25px;
+      margin-top: 5%;
+      animation: top 1.5s ease; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
