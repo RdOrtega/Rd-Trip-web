@@ -266,7 +266,7 @@ hr {
     .contact h4 {
       color: rgba(255, 255, 255, 0.904); }
     .contact .form {
-      padding-bottom: 5px;
+      padding-bottom: 25px;
       margin-top: 5%;
       animation: top 1.5s ease; }
     .contact .f-follow {
@@ -526,7 +526,7 @@ hr {
       object-fit: cover;
       background-image: url(../img/fondos/f-follow.jpg); }
     .contact .form {
-      padding-bottom: 5px;
+      padding-bottom: 25px;
       padding-top: 5%;
       animation: top 1.5s ease; } }
 
