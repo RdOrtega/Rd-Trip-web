@@ -405,7 +405,7 @@ hr {
   .f-titulo {
     margin-left: -3%;
     border-radius: 4%;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #000000d2;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
   .parrafo {
     border-radius: 4%;
@@ -434,7 +434,7 @@ hr {
   .ft-services {
     margin-left: -3%;
     border-radius: 4%;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #000000d2;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
   .titulo-help {
     margin-left: 60%; }
@@ -706,7 +706,7 @@ hr {
   .f-titulo {
     margin-left: -3%;
     border-radius: 4%;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #000000d2;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
   .f-historia {
     background-image: url(../img/fondos/bandera-colombia.png); }
@@ -720,7 +720,7 @@ hr {
   .ft-services {
     margin-left: -3%;
     border-radius: 4%;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #000000d2;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
   .titulo-help {
     margin-left: 60%; }
@@ -860,7 +860,7 @@ hr {
       margin-top: 2%; }
     .contact .form {
       padding-top: 3%;
-      animation: izquierda 1.5s ease; } }
+      animation: top 1.5s ease; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
