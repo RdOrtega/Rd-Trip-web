@@ -12,6 +12,12 @@
         background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%);
     }
 
+    .logo{
+        img{
+            width: 50px;
+        }
+    }
+
     /* MENU NAVBAR MOBILE HOME  */
 
     .page a {
@@ -53,7 +59,6 @@
 
     .p-mobile {
         color: $smoke;
-        font-family: 'Lora', serif;
         background-color: $dark;
         background-image: linear-gradient(to top, #000000ce 5%, #414141 70%);
 
@@ -113,7 +118,6 @@
             .biotext {
                 color: rgba(218, 218, 218, 0.726);
                 font-weight: bolder;
-                font-family: 'Lora', serif;
                 text-decoration: overline;
             }
 
@@ -324,12 +328,15 @@
         }
 
         .form {
-            padding-bottom:25px;
+            padding-bottom: 25px;
             padding-top: 5%;
             @include top;
         }
+
+        .ico-serv {
+            img {
+                width: 30px;
+            }
+        }
     }
-
-
-
 }

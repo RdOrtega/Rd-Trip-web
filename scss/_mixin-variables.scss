@@ -1,15 +1,13 @@
-////////////////
+//////////////////////////////////////////
 //STYLES - MIXIN - VARIABLES - ANIMACIONES
 
 @mixin carrusel-tex {
-    font-family: 'Lora', serif;
     border-radius: 4%;
     background-color: $p-carrusel;
 }
 
 @mixin history {
     border-radius: 4%;
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: $smoke;
 }
@@ -120,5 +118,4 @@ $smoke:rgba(255, 255, 255, 0.904);
     font-size: 20px;
     color: $smoke;
     padding: 2% 0% 2% 0%;
-    font-family: 'Lora', serif;
 }

@@ -7,9 +7,15 @@
 
     /***** MOBILE FIRST-GENERALES *****/
 
-    .navbar{
+    .navbar {
         background-color: $dark;
         background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%);
+    }
+
+    .logo{
+        img{
+            width: 50px;
+        }
     }
 
     .tex {
@@ -31,7 +37,7 @@
 
     /* TEXTO DIAPOSITIVA CARRUSEL - MOBILE HOME */
 
-    .text{
+    .text {
         background-color: $dark;
         border-radius: 4%;
     }
@@ -58,7 +64,6 @@
 
     .p-mobile {
         color: $smoke;
-        font-family: 'Lora', serif;
         background-color: $dark;
         background-image: linear-gradient(to top, #000000ce 5%, #414141 70%);
 
@@ -118,7 +123,6 @@
                 position: relative;
                 color: rgba(218, 218, 218, 0.726);
                 font-weight: bolder;
-                font-family: 'Lora', serif;
                 text-decoration: overline;
                 right: 10%;
             }
@@ -262,7 +266,7 @@
     }
 
     /*ANIMACION CON JVSCRIPT*/
-    
+
     .cont {
         img {
             opacity: 0;
@@ -311,33 +315,39 @@
         color: $smoke;
         background-color: $dark;
 
-    .tex {
-        @include carrusel-tex;
-    }
-
-    .l-redes {
-        img {
-            margin-left: 4%;
+        .tex {
+            @include carrusel-tex;
         }
-    }
 
-    h4 {
-        color: $smoke;
-    }
+        .l-redes {
+            img {
+                margin-left: 4%;
+            }
+        }
 
-    .f-follow {
-        padding-top: 5%;
-        margin-top: 10%;  
-        border-radius: 2%;
-        object-fit: cover;
-        background-image: url(../img/fondos/photo-follow.jpg);
-    }
+        h4 {
+            color: $smoke;
+        }
 
-    .form {
-        padding-bottom:25px;
-        margin-top: 5%;
-        @include top;
-    }
+        .f-follow {
+            padding-top: 5%;
+            margin-top: 10%;
+            border-radius: 2%;
+            object-fit: cover;
+            background-image: url(../img/fondos/photo-follow.jpg);
+        }
+
+        .form {
+            padding-bottom: 25px;
+            margin-top: 5%;
+            @include top;
+        }
+
+        .ico-serv {
+            img {
+                width: 33px;
+            }
+        }
     }
 
 }

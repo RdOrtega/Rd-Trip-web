@@ -1,5 +1,4 @@
 /*ESTILOS GENERALES*/
-@import url("https://fonts.googleapis.com/css2? family= Quintessential & display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -55,8 +54,9 @@ hr {
   .navbar {
     background-color: #000000d2;
     background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .logo img {
+    width: 50px; }
   .tex {
-    font-family: 'Lora', serif;
     border-radius: 4%;
     background-color: rgba(7, 7, 7, 0.541); }
   /* MENU NAVBAR MOBILE HOME  */
@@ -87,7 +87,6 @@ hr {
       background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
   .p-mobile {
     color: rgba(255, 255, 255, 0.904);
-    font-family: 'Lora', serif;
     background-color: #000000d2;
     background-image: linear-gradient(to top, #000000ce 5%, #414141 70%); }
     .p-mobile h2 {
@@ -129,7 +128,6 @@ hr {
         position: relative;
         color: rgba(218, 218, 218, 0.726);
         font-weight: bolder;
-        font-family: 'Lora', serif;
         text-decoration: overline;
         right: 10%; }
       .img-bio .bio2 img {
@@ -144,7 +142,6 @@ hr {
           background-color: rgba(248, 240, 162, 0.288); }
   .f-titulo {
     border-radius: 4%;
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
     background-color: #000000d2; }
@@ -153,13 +150,11 @@ hr {
     background-color: #000000d2; }
   .parrafo {
     border-radius: 4%;
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
     background-color: rgba(151, 151, 151, 0.356); }
   .ft-services {
     border-radius: 4%;
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904); }
   .derecha {
@@ -206,7 +201,6 @@ hr {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
     padding: 2% 0% 2% 0%;
-    font-family: 'Lora', serif;
     background: rgba(151, 151, 151, 0.356); }
   .r-serv {
     display: grid;
@@ -258,7 +252,6 @@ hr {
     color: rgba(255, 255, 255, 0.904);
     background-color: #000000d2; }
     .contact .tex {
-      font-family: 'Lora', serif;
       border-radius: 4%;
       background-color: rgba(7, 7, 7, 0.541); }
     .contact .l-redes img {
@@ -274,7 +267,9 @@ hr {
     .contact .form {
       padding-bottom: 25px;
       margin-top: 5%;
-      animation: top 1.5s ease; } }
+      animation: top 1.5s ease; }
+    .contact .ico-serv img {
+      width: 33px; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
@@ -315,6 +310,8 @@ hr {
   .navbar {
     background-color: #000000d2;
     background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
+  .logo img {
+    width: 50px; }
   /* MENU NAVBAR MOBILE HOME  */
   .page a {
     color: rgba(255, 255, 255, 0.904);
@@ -324,7 +321,6 @@ hr {
     background-color: #000000d2;
     border-radius: 4%; }
   .tex {
-    font-family: 'Lora', serif;
     border-radius: 4%;
     background-color: rgba(7, 7, 7, 0.541); }
   /*SEPARADOR RIBBON  */
@@ -344,7 +340,6 @@ hr {
       background-image: linear-gradient(to top, #000000ce 15%, #414141cc 70%); }
   .p-mobile {
     color: rgba(255, 255, 255, 0.904);
-    font-family: 'Lora', serif;
     background-color: #000000d2;
     background-image: linear-gradient(to top, #000000ce 5%, #414141 70%); }
     .p-mobile h2 {
@@ -387,7 +382,6 @@ hr {
       .img-bio .bio2 .biotext {
         color: rgba(218, 218, 218, 0.726);
         font-weight: bolder;
-        font-family: 'Lora', serif;
         text-decoration: overline; }
       .img-bio .bio2 img {
         border-radius: 100%;
@@ -409,7 +403,6 @@ hr {
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.76); }
   .parrafo {
     border-radius: 4%;
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
     background-color: rgba(151, 151, 151, 0.356); }
@@ -473,7 +466,6 @@ hr {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
     padding: 2% 0% 2% 0%;
-    font-family: 'Lora', serif;
     background: rgba(151, 151, 151, 0.356); }
   .descrip {
     margin-bottom: 4%; }
@@ -528,7 +520,9 @@ hr {
     .contact .form {
       padding-bottom: 25px;
       padding-top: 5%;
-      animation: top 1.5s ease; } }
+      animation: top 1.5s ease; }
+    .contact .ico-serv img {
+      width: 30px; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/
@@ -685,7 +679,6 @@ hr {
       .img-bio .bio2 .biotext {
         color: rgba(218, 218, 218, 0.726);
         font-weight: bolder;
-        font-family: 'Lora', serif;
         text-decoration: overline; }
       .img-bio .bio2 img {
         width: 45px;
@@ -712,7 +705,6 @@ hr {
     background-image: url(../img/fondos/bandera-colombia.png); }
   .parrafo {
     border-radius: 4%;
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
     background-color: rgba(7, 7, 7, 0.541); }
@@ -737,8 +729,7 @@ hr {
     border-radius: 4%;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.904);
-    padding: 2% 0% 2% 0%;
-    font-family: 'Lora', serif; }
+    padding: 2% 0% 2% 0%; }
   /*ANIMACION CON JVSCRIPT*/
   .cont img {
     opacity: 0;
@@ -749,12 +740,10 @@ hr {
       scale: 1; }
   .sderecha {
     animation: derecha 1.5s ease;
-    font-family: 'Lora', serif;
     border-radius: 4%;
     background-color: rgba(7, 7, 7, 0.541); }
   .sizquierda {
     animation: izquierda 1.5s ease;
-    font-family: 'Lora', serif;
     border-radius: 4%;
     background-color: rgba(7, 7, 7, 0.541); }
   /*SEPARADOR RIBBON  */
@@ -841,18 +830,16 @@ hr {
   /***** GET IN TOUCH *****/
   .contact {
     color: rgba(255, 255, 255, 0.904);
-    background-color: rgba(255, 255, 255, 0.904);
-    background-image: linear-gradient(to top, #000000be 5%, #414141 70%); }
+    background-color: rgba(0, 0, 0, 0.726); }
+    .contact .escarabajo img {
+      width: 60px; }
     .contact .tex {
-      font-family: 'Lora', serif;
       border-radius: 4%;
       background-color: rgba(7, 7, 7, 0.541); }
     .contact .redes {
-      font-weight: bold; }
+      font-weight: bolder; }
       .contact .redes a {
         color: rgba(255, 255, 255, 0.904); }
-    .contact h4 {
-      color: rgba(255, 255, 255, 0.904); }
     .contact .line {
       color: #000000d2; }
     .contact .f-follow {
@@ -860,7 +847,9 @@ hr {
       margin-top: 2%; }
     .contact .form {
       padding-top: 3%;
-      animation: top 1.5s ease; } }
+      animation: top 1.5s ease; }
+    .contact .ico-serv img {
+      width: 30px; } }
 
 /*STYLES - TABLET*/
 /*ANIMACION*/

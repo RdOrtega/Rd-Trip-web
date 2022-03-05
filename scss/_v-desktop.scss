@@ -183,7 +183,6 @@
             .biotext {
                 color: rgba(218, 218, 218, 0.726);
                 font-weight: bolder;
-                font-family: 'Lora', serif;
                 text-decoration: overline;
             }
 
@@ -425,8 +424,13 @@
 
     .contact {
         color: $smoke;
-        background-color: $smoke;
-        background-image: linear-gradient(to top, #000000be 5%, #414141 70%);
+        background-color: rgba(0, 0, 0, 0.726);
+
+        .escarabajo{
+            img{
+                width: 60px;
+            }
+        }
 
 
         .tex {
@@ -434,15 +438,11 @@
         }
 
         .redes {
-            font-weight: bold;
+            font-weight: bolder;
 
             a {
                 color: $smoke;
             }
-        }
-
-        h4 {
-            color: $smoke;
         }
 
         .line {
@@ -457,6 +457,12 @@
         .form {
             padding-top: 3%;
             @include top;
+        }
+
+        .ico-serv {
+            img {
+                width: 30px;
+            }
         }
     }
 
