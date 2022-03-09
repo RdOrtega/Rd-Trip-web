@@ -107,10 +107,9 @@ hr {
     .img-bio .text-bio {
       position: absolute;
       width: 200px;
-      top: 10px;
-      right: 2%;
-      color: rgba(229, 226, 226, 0.822);
-      text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664); }
+      top: 8%;
+      right: 3%;
+      color: rgba(229, 226, 226, 0.822); }
       .img-bio .text-bio img {
         position: absolute;
         z-index: 1;
@@ -361,14 +360,13 @@ hr {
       position: absolute;
       width: 250px;
       font-size: 20px;
-      top: 90px;
+      top: 25%;
       right: 4%;
-      color: rgba(229, 226, 226, 0.822);
-      text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664); }
+      color: rgba(229, 226, 226, 0.822); }
       .img-bio .text-bio img {
         position: absolute;
         z-index: 1;
-        width: 30px;
+        width: 60px;
         right: 0%;
         top: -70px;
         text-align: end; }
@@ -658,10 +656,9 @@ hr {
     .img-bio .text-bio {
       position: absolute;
       width: 200px;
-      top: 90px;
+      top: 25%;
       right: 4%;
-      color: rgba(229, 226, 226, 0.822);
-      text-shadow: 3px 2px 0px rgba(77, 77, 77, 0.664); }
+      color: rgba(229, 226, 226, 0.822); }
       .img-bio .text-bio img {
         position: absolute;
         z-index: 1;
